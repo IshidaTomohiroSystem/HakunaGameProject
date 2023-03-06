@@ -32,4 +32,7 @@ public abstract class CharaBase
     protected string name { get; set; }
 
     protected Vector3 position { get; set; }
+
+    protected GameObject attackEffect { get; set; }
+
 }
