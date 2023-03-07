@@ -11,7 +11,11 @@ public class CharaMove : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        charaMat = charaRenderer.material;
+        if(charaRenderer == null)
+        {
+            return;
+        }
+        charaMat = charaRenderer?.material;
     }
 
     // Update is called once per frame
@@ -22,7 +26,8 @@ public class CharaMove : MonoBehaviour
             var pos = this.transform.position;
             this.transform.position = new Vector3(pos.x - 0.05f, pos.y, pos.z);
             Vector2 offset = new Vector2(-1.0f, 1.0f);
-            charaMat.SetTextureScale("_MainTex", offset);
+            if (charaRenderer != null)
+                charaMat?.SetTextureScale("_MainTex", offset);
         }
 
         if (Input.GetKey(KeyCode.D))
@@ -30,7 +35,8 @@ public class CharaMove : MonoBehaviour
             var pos = this.transform.position;
             this.transform.position = new Vector3(pos.x + 0.05f, pos.y, pos.z);
             Vector2 offset = new Vector2(1.0f, 1.0f);
-            charaMat.SetTextureScale("_MainTex", offset);
+            if (charaRenderer != null)
+                charaMat?.SetTextureScale("_MainTex", offset);
         }
     }
 

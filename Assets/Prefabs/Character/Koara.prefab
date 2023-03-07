@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139274376869370752}
-  - component: {fileID: 2667239442573556967}
   m_Layer: 0
   m_Name: Koara
   m_TagString: Untagged
@@ -30,23 +29,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1609789130282949770}
-  - {fileID: 531436656503707454}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2667239442573556967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8113149984418803050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a16a68903af73046af27430485fa3b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  charaRenderer: {fileID: 3599366455405328000}
 --- !u!1 &8974681049450789338
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +95,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d8ba967b3c201dc47a949c6e700f1fae, type: 2}
+  - {fileID: 2100000, guid: 76568e3eaf40bdc43a758a9918696cb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -180,87 +165,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!1001 &8364776436684222121
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2139274376869370752}
-    m_Modifications:
-    - target: {fileID: 5610320426836615870, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9002273102909372186, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-        type: 3}
-      propertyPath: m_Name
-      value: ThinLazer
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9cbb04a1a7cae0f44acdba510e1dda05, type: 3}
---- !u!4 &531436656503707454 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
-    type: 3}
-  m_PrefabInstance: {fileID: 8364776436684222121}
-  m_PrefabAsset: {fileID: 0}
