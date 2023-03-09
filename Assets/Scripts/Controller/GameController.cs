@@ -1,36 +1,25 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    [SerializeField] GameObject mainCameraPrefab;
-    [SerializeField] GameObject playerPrefab;
+    [SerializeField] CharListData dharListData;
+    [SerializeField] SelectPlayerData SelectPlayerData;
+    [SerializeField] Image UserImage;
+    [SerializeField] GameObject playerShip;
+    [SerializeField] GameObject ribbonEffect;
+    [SerializeField] ScoreData scoreData;
 
-    GameObject player;
-    GameObject mainCamera;
-
-    [SerializeField] Vector3 startPosition;
-    [SerializeField] Vector3 cameraPosition;
-
-    // Start is called before the first frame update
-    void Awake()
+    private void Awake()
     {
-        mainCamera = Instantiate(mainCameraPrefab);
-        mainCamera.transform.position = cameraPosition;
+        CharaData charatData = dharListData.CharList[SelectPlayerData.charNumber];
+        UserImage.sprite = charatData.CharaSprite;
 
-        player = Instantiate(playerPrefab);
-        player.transform.position = startPosition;
-        player.transform.localEulerAngles = new Vector3(90.0f, 180.0f, 0.0f);
-        player.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 difference = player.transform.position - startPosition;
-        mainCamera.transform.position = cameraPosition + difference;
+        GameObject gameobject = Instantiate(playerShip);
+        gameobject.transform.position = new Vector3(-0.2f, -0.3f, 0);
+        scoreData.score = 0;
+        ribbonEffect.SetActive(true);
     }
 }
