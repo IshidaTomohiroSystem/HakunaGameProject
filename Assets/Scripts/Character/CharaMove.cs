@@ -24,7 +24,12 @@ public class CharaMove : MonoBehaviour
         if(Input.GetKey(KeyCode.A))
         {
             var pos = this.transform.position;
-            this.transform.position = new Vector3(pos.x - 0.05f, pos.y, pos.z);
+            var posx = pos.x - 0.05f;
+            if(posx < -0.7f)
+            {
+                posx = pos.x;
+            }
+            this.transform.position = new Vector3(posx, pos.y, pos.z);
             Vector2 offset = new Vector2(-1.0f, 1.0f);
             if (charaRenderer != null)
                 charaMat?.SetTextureScale("_MainTex", offset);
@@ -33,7 +38,12 @@ public class CharaMove : MonoBehaviour
         if (Input.GetKey(KeyCode.D))
         {
             var pos = this.transform.position;
-            this.transform.position = new Vector3(pos.x + 0.05f, pos.y, pos.z);
+            var posx = pos.x + 0.05f;
+            if (posx > 0.3f)
+            {
+                posx = pos.x;
+            }
+            this.transform.position = new Vector3(posx, pos.y, pos.z);
             Vector2 offset = new Vector2(1.0f, 1.0f);
             if (charaRenderer != null)
                 charaMat?.SetTextureScale("_MainTex", offset);
