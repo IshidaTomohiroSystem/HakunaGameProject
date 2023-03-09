@@ -7,11 +7,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "CharListData", menuName = "ScriptableObjects/CharListDataAssets")]
 public class CharListData : ScriptableObject
 {
-    public List<CharaData> CharList = new List<CharaData>();
+    public List<CharaObjectData> CharList = new List<CharaObjectData>();
 }
 
 [Serializable]
-public class CharaData
+public class CharaObjectData
 {
     public GameObject chara;
     public Sprite CharaSprite;

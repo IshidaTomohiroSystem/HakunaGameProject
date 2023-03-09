@@ -210,6 +210,7 @@ GameObject:
   - component: {fileID: 254450448}
   - component: {fileID: 254450450}
   - component: {fileID: 254450449}
+  - component: {fileID: 254450451}
   m_Layer: 5
   m_Name: HP
   m_TagString: Untagged
@@ -276,6 +277,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254450447}
   m_CullTransparentMesh: 1
+--- !u!114 &254450451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254450447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87694b5e4eb4efd4280a38c596037379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpSlider: {fileID: 1184444759}
+  charaData: {fileID: 11400000, guid: ad46ef3e22fea1545bf7f16bcd6f7692, type: 2}
 --- !u!1 &430075010
 GameObject:
   m_ObjectHideFlags: 0
@@ -564,13 +579,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22bc3c7cc6acb48498883de9e0e16555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dharListData: {fileID: 11400000, guid: e71399067ba6871498d6ff2ffd37208e, type: 2}
+  charListData: {fileID: 11400000, guid: e71399067ba6871498d6ff2ffd37208e, type: 2}
   SelectPlayerData: {fileID: 11400000, guid: 456a1e4076bd9da4594a3af17638594c, type: 2}
   UserImage: {fileID: 1778061681}
   playerShip: {fileID: 6049392260574643578, guid: 9149e04a4e17253408af07e7f3a32708,
     type: 3}
   ribbonEffect: {fileID: 2122378080}
   scoreData: {fileID: 11400000, guid: 662f21a2119554341aa36d4d45043bfe, type: 2}
+  charaData: {fileID: 11400000, guid: ad46ef3e22fea1545bf7f16bcd6f7692, type: 2}
+  setHP: {fileID: 254450451}
 --- !u!4 &609389324
 Transform:
   m_ObjectHideFlags: 0
@@ -931,9 +948,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1190011260}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 5
+  m_MaxValue: 200
   m_WholeNumbers: 0
-  m_Value: 2
+  m_Value: 80
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

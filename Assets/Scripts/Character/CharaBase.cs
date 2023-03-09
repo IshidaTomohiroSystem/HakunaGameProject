@@ -9,27 +9,13 @@ public enum CharaType
     Player,
     Enemey,
 }
-public abstract class CharaBase
+public abstract class CharaBase : MonoBehaviour
 {
-    protected CharaType charaType;
+    public CharaType charaType;
 
-    protected float hp
-    {
-        get
-        {
-            return this.hp;
-        }
-        set
-        {
-            this.hp = value;
-            if (this.hp < 0)
-            {
-                this.hp = 0;
-            }
-        }
-    }
+    public float hp { get; set; }
 
-    protected string name { get; set; }
+    public string name { get; set; }
 
     protected Vector3 position { get; set; }
 

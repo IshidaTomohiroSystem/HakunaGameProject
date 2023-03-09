@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4759406129632058128}
   - component: {fileID: 2523551495013475724}
+  - component: {fileID: 1620424772855920477}
+  - component: {fileID: 965900281412631368}
+  - component: {fileID: 7786207667389421012}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -32,7 +35,7 @@ Transform:
   - {fileID: 340671897995516634}
   - {fileID: 2500504822124621698}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2523551495013475724
 MonoBehaviour:
@@ -47,6 +50,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charaRenderer: {fileID: 0}
+--- !u!114 &1620424772855920477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049392260574643578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba810674b4ce0d4e96597f3420bac38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charaType: 0
+--- !u!65 &965900281412631368
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049392260574643578}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7786207667389421012
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6049392260574643578}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &4738063368611606976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,6 +219,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4759406129632058128}
     m_Modifications:
+    - target: {fileID: 2830381721459325933, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3620426185069954115, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4931293172133124808, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8319746149621217687, guid: 9cbb04a1a7cae0f44acdba510e1dda05,
         type: 3}
       propertyPath: m_RootOrder

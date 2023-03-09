@@ -22,7 +22,7 @@ public class CharaSelectController : MonoBehaviour
         int charaMaxCount = charListData.CharList.Count;
         int charaCount = 0;
 
-        foreach(CharaData charaData in charListData.CharList)
+        foreach(CharaObjectData charaData in charListData.CharList)
         {
             GameObject gameObject= Instantiate(charaData.chara, Center.transform);
             spawnAngle = (maxAngle / (float)charaMaxCount) * charaCount;
