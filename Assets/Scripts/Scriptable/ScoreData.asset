@@ -1,15 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1495b19c28914094a99269c3559060f9, type: 3}
-  m_Name: ScoreData
-  m_EditorClassIdentifier: 
-  score: 0
+version https://git-lfs.github.com/spec/v1
+oid sha256:8910cd5c5414a232692ad2e2121755118a2f2f839437e657e7441ba49248217f
+size 409

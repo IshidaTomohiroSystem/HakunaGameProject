@@ -15,4 +15,5 @@ public class CharaObjectData
 {
     public GameObject chara;
     public Sprite CharaSprite;
+    public string CharaName;
 }

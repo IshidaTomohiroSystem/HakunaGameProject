@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class GameController : MonoBehaviour
     [SerializeField] CharaData charaData;
     Player player;
     [SerializeField] SetHP setHP;
+    [SerializeField] TextMeshProUGUI charaName;
 
     float oldHP;
 
@@ -30,6 +32,8 @@ public class GameController : MonoBehaviour
         player = gameobject.GetComponent<Player>();
         player.hp = charaData.CharaHP;
         oldHP = player.hp;
+
+        charaName.text = charatData.CharaName;
     }
 
     private void Update()
