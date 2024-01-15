@@ -1,3 +1,60 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:243a3af33ac277c27313bc77c20a9a51341b8aba0ebf8fb5249ab3a5a513717f
-size 3472
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c75b301e032b93409bdf85906829574, type: 3}
+  m_Name: CharListData
+  m_EditorClassIdentifier: 
+  CharList:
+  - chara: {fileID: 4154056798561714565, guid: 70a2f21022f8b7942b387a640e062e84, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 2ffd3dd178f8f4e48a8385138dffac3a, type: 3}
+    CharaName: "\u767D\u514E"
+  - chara: {fileID: 558665902440420432, guid: 480a65a8f835697408a60eb6f59b1c11, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 501513e2cc4b9cd4cb244c297f0e1af8, type: 3}
+    CharaName: "\u6D77\u6D0B\u751F\u7269"
+  - chara: {fileID: 8113149984418803050, guid: c50b81c80805b8d40b064065e0bed38e, type: 3}
+    CharaSprite: {fileID: 21300000, guid: f5631eb202fb99b4d967e20f39fd4212, type: 3}
+    CharaName: koara
+  - chara: {fileID: 5879309112235715688, guid: bef4bddba2704e044a680d778d7f1aa5, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 7a5eacca259ca9540a3436f7fe7d73d5, type: 3}
+    CharaName: "\u3082\u3051"
+  - chara: {fileID: 3329071951076216880, guid: 45c3d5c2c1a7fc347aa558c9bd6b0375, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 561a4749743e96547941846595ae5a05, type: 3}
+    CharaName: "\u304A\u3086\u304D"
+  - chara: {fileID: 1049171305202255272, guid: bba4fc4ab55a00a45835d697586b9e1d, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 6c529778f9083fc4bb8dd3bca2d6b4e3, type: 3}
+    CharaName: "\u3071\u306A\u304D"
+  - chara: {fileID: 2267055344352894624, guid: 210b7695f8204a048a090b47642098e7, type: 3}
+    CharaSprite: {fileID: 21300000, guid: c666267226aa42644945917ba3e67329, type: 3}
+    CharaName: rabi
+  - chara: {fileID: 6102696088372505984, guid: 6dc0a11abe462f04186b5437ec68efd5, type: 3}
+    CharaSprite: {fileID: 21300000, guid: cf11d3ccad87a644dae2827d6acec109, type: 3}
+    CharaName: "\u793C\u97F3"
+  - chara: {fileID: 8644942576506782575, guid: 176e1fae161d2b5479f15e599e9c59a9, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 85f2c58c7b6510a44b4f0782099d134a, type: 3}
+    CharaName: "\u3059\u3045"
+  - chara: {fileID: 6010780419361980670, guid: 867c16ae626e9b34180ae940fd09e754, type: 3}
+    CharaSprite: {fileID: 21300000, guid: c4991f0139b8c8c4fafa5b850d310805, type: 3}
+    CharaName: "\u5929\u5929"
+  - chara: {fileID: 4447917050183709279, guid: b6cd0845aa38e954c9588e4067c08c5f, type: 3}
+    CharaSprite: {fileID: 21300000, guid: ec315d49dbcc34a4bb8868eb415f5b6b, type: 3}
+    CharaName: toshi
+  - chara: {fileID: 1667914732463553033, guid: 6d639f58499105e438ddce83f39643b1, type: 3}
+    CharaSprite: {fileID: 21300000, guid: e435e3bdd2332b94cb82f84402c993b9, type: 3}
+    CharaName: yuyu
+  - chara: {fileID: 5889125242594116060, guid: 11092ffbdb9f80443a250f28a68bcc68, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 643715d06503bd04e8accb362d495223, type: 3}
+    CharaName: "\u308B\u306A"
+  - chara: {fileID: 431505459399409138, guid: b0b9b51700bddba47baf1c24863c7dd2, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 0089ed81e9c77484691ae60f90255930, type: 3}
+    CharaName: "\u7652\u4F86"
+  - chara: {fileID: 2698431009701474371, guid: 1ad891e248583404a9a2eaa44980ab26, type: 3}
+    CharaSprite: {fileID: 21300000, guid: 9e756041e80504c47acbfe32941b0fe8, type: 3}
+    CharaName: "\u7121\u540D"

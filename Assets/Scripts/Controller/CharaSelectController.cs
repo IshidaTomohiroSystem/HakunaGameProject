@@ -83,7 +83,7 @@ public class CharaSelectController : MonoBehaviour
             {
                 selectPlayerData.charNumber = -selectCount;
             }
-            SceneManager.LoadScene("Game");
+            SceneManager.LoadScene("StageSelect");
         }
     }
 }
