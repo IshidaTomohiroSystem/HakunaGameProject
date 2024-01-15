@@ -581,6 +581,7 @@ MonoBehaviour:
   - {fileID: 1755476669}
   - {fileID: 1020366586}
   - {fileID: 1414681420}
+  selectPlayerData: {fileID: 11400000, guid: 456a1e4076bd9da4594a3af17638594c, type: 2}
 --- !u!4 &1068330206
 Transform:
   m_ObjectHideFlags: 0

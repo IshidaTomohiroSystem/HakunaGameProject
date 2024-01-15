@@ -9,6 +9,7 @@ public class StageSelectController : MonoBehaviour
 {
     [SerializeField] List<TextMeshPro> stageTexts = new List<TextMeshPro>();
     int stageNum;
+    [SerializeField] SelectPlayerData selectPlayerData;
 
     // Start is called before the first frame update
     void Awake()
@@ -37,6 +38,7 @@ public class StageSelectController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            selectPlayerData.charNumber = selectPlayerData.charNumber;
             SceneManager.LoadScene("Game");
         }
     }
