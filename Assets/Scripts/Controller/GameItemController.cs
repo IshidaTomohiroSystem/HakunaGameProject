@@ -1,22 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
-public class AsteroidController : MonoBehaviour
+public class GameItemController : MonoBehaviour
 {
-    [SerializeField] List<GameObject> asteroidList;
+    [SerializeField] List<GameObject> itemList;
     int count = 0;
     readonly int time = 60;
     // Update is called once per frame
     void Update()
     {
         count++;
-        if(count == asteroidList.Count)
+        if (count == itemList.Count)
         {
             System.Random r1 = new System.Random();
             int randomNumber = r1.Next(0, 3);
-            GameObject gameObject = Instantiate(asteroidList[randomNumber]);
+            GameObject gameObject = Instantiate(itemList[randomNumber]);
 
             float randomFloatX = UnityEngine.Random.Range(-0.6f, 0.3f); ;
 

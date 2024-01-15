@@ -20,14 +20,14 @@ public class StageSelectController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.UpArrow))
+        if(Input.GetKeyDown(KeyCode.W))
         {
             stageNum++;
             stageNum = stageNum > stageTexts.Count ? stageNum - stageTexts.Count : stageNum;
             SelectStage(stageNum);
         }
 
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             stageNum--;
             stageNum = stageNum < 0 ? stageNum + stageTexts.Count : stageNum;
