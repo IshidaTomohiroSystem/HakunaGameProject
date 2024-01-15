@@ -38,7 +38,7 @@ public class StageSelectController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            selectPlayerData.charNumber = selectPlayerData.charNumber;
+            //selectPlayerData.charNumber = selectPlayerData.charNumber;
             SceneManager.LoadScene("Game");
         }
     }
